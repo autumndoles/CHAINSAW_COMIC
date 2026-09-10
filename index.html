@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webcomic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="comic-title">Chainsaw</h1>
+    </header>
+
+    <main>
+        <!-- The comic image container -->
+        <div class="comic-container">
+            <img id="comic-image" src="" alt="Loading comic...">
+        </div>
+
+        <!-- Navigation System -->
+        <nav class="comic-nav">
+            <button onclick="goToPage(0)">|&lt; First</button>
+            <button onclick="changePage(-1)">&lt; Prev</button>
+            <button onclick="changePage(1)">Next &gt;</button>
+            <button onclick="goToPage(comicPages.length - 1)">Latest &gt;|</button>
+        </nav>
+    </main>
+
+    <script src="comic.js"></script>
+</body>
+</html>
