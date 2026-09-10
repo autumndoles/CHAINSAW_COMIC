@@ -1,0 +1,40 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Fits a raw comic aesthetic */
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.comic-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 3px solid #f0f0f0;
+    background: #fff; /* White background pops pencil artwork contrast */
+    padding: 5px;
+}
+
+.comic-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* This rule prevents browser anti-aliasing from blurring fine pencil graphite lines */
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: crisp-edges;
+}
+
+.comic-nav button {
+    background: #333;
+    color: #fff;
+    border: 2px solid #f0f0f0;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comic-nav button:hover {
+    background: #f0f0f0;
+    color: #333;
+}
